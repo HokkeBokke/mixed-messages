@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generate inspirational message</title>
+  <style>
+    html, body {
+      margin: 0;
+      background: #2a2a2a;
+    }
+
+    nav {
+      background: black;
+      display: flex;
+      align-items: center;
+    }
+
+    nav > * {
+      display: block  ;
+      color: #f0f0f0;
+      margin: 0;
+      text-decoration: none;
+      text-align: center;
+      padding: 1rem 1rem;
+    }
+
+    #generator {
+      text-align: center;
+      min-width: 420px;
+      width: 40vw;
+      margin: auto;
+      margin-top: 100px;
+    }
+
+    #quote {
+      font-size: large;
+      color: white;
+      white-space: pre-wrap;
+      line-height: 1.5em;
+    }
+
+    button {
+      outline: none;
+      border: none;
+      font-size: 1.33em;
+      box-shadow: #0000001a 1px 3px 5px;
+      background-color: #4c4c4c;
+      color: #f1f1f1;
+      padding: 0.5em;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #3c3c3c;
+    }
+    button:active {
+      background-color: #303030;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>Message generator</h1>
+    <a href="#">Inspirational quotes</a>
+  </nav>
+  <div id="generator">
+    <span id="quote"></span>
+    <br />
+    <button type="button">Generate quote</button>
+  </div>
+  <script src="generate.js"></script>
+</body>
+</html>
